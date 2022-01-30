@@ -12,8 +12,7 @@ void PrintArray(string[] Array)
 Console.WriteLine();
 // Создаём массив заполнив его текстами
 string[] Array1 = {"hello", "Ура", "world", "по", ";%:?*", "лу", "f4ы3", "чил", "sgbcr", "ось", "!"};
-PrintArray(Array1);
-Console.WriteLine();
+// PrintArray(Array1);
 // Определяем колличество элементов в массиве длинной 3 и менее символов
 int long3 = 0;
 for (int i = 0; i < Array1.Length; i++)
@@ -25,7 +24,7 @@ for (int i = 0; i < Array1.Length; i++)
         long3 = long3 + 1;
     }
 }
-Console.WriteLine(long3);
+// Console.WriteLine(long3);
 // Создаём массив с длинной равному колличеству 
 // элементов в массиве длинной 3 и менее символов
 string[] Array2 = new string [long3];
@@ -41,4 +40,8 @@ for (int j = 0; j < Array1.Length; j++)
         q++;
     }
 }
+Console.WriteLine("Из имеющегося массива: ");
+PrintArray(Array1);
+Console.WriteLine();
+Console.WriteLine("формируем массив из элементов длинной 3 и менее символов: ");
 PrintArray(Array2);
