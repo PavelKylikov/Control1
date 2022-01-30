@@ -26,3 +26,19 @@ for (int i = 0; i < Array1.Length; i++)
     }
 }
 Console.WriteLine(long3);
+// Создаём массив с длинной равному колличеству 
+// элементов в массиве длинной 3 и менее символов
+string[] Array2 = new string [long3];
+// Заполняем новый массив нужными элементами из изначального массива
+int q = 0;
+for (int j = 0; j < Array1.Length; j++)
+{
+    string Text = Array1[j];
+    int length = Text.Length;
+    if (length <= 3)
+    {
+        Array2[q] = Array1[j];
+        q++;
+    }
+}
+PrintArray(Array2);
